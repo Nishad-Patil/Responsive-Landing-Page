@@ -1,0 +1,231 @@
+  /* Googel-Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-flued{
+    min-height: 100vh;
+    min-width: 100vh;
+}
+.navbar i{
+    display: none;
+    margin-right: 2rem;
+    font-size: 25px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #3b3f3e; 
+    font-weight: 500 ;
+    font-size: 1rem;
+}
+.navbar a:hover{
+    color: #f5aad8;
+}
+
+.Logo{
+   width: 40px;
+}
+.main-row{
+    position: relative;
+    margin-top: 100px;
+}
+
+/* text-containt */
+.text-content{
+position: relative;
+}
+.text-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.text-content h2{
+    font-size: 1.5rem;
+    color: #6c7270;
+}
+.text-content p{
+    margin-top: 5px;
+    color: #b1afaf;
+    font-size: .8rem;
+}
+.text-content h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.text-content .btn{
+    background: linear-gradient(to right,#f53162ec,#f81f1f);
+    border: none;
+    margin-top: 20px;
+    width: 120px;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    transition: width 1s ease-out;
+}
+.text-content .btn img{
+    margin-left: 5px;
+    width: 20px;
+    display: none;
+}
+.text-content .btn:hover img {
+    display: block;
+}
+.text-content .btn:hover{
+    width: 170px;
+    justify-content: space-between;
+   
+}
+.text-content::before{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -10px;
+    height:50%;
+    width: 8px;
+    border-radius: 2px;
+    background:linear-gradient(to top ,#f53162ec,#f81f1f); 
+}
+/* Image content */
+.img-content{
+    position: relative;
+}
+.img-content .controller{
+    max-width: 30rem;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+.img-content::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom,#f53162ec,#f81f1f); 
+    border-radius: 24px 0px 0px 24px;
+    left: 330px;
+    top: 10px;
+    z-index: -1;
+    height: 125%;
+    width: 100%;
+}
+.img-content .add{
+    width: 40px;
+    position: relative;
+    left: 180px;
+    top: 30px;
+}
+.img-content small{
+    color: #fff;
+    position: relative;
+    top: 75px;
+    left: 112px;
+    font-size: 1rem;
+}
+.icons{
+    margin-top: 150px;
+}
+.icons i{
+   margin: 0px 10px;
+   font-size: 20px;
+}
+.icons i:hover{
+    color:#f81f1f ;
+}
+
+/* Media Quary for 768 */
+@media (max-width:768px){
+    .navbar a {
+        display: none;
+    }
+    .navbar i{
+        display: block;
+    }
+    .img-content .controller{
+        max-width: 22rem;
+        top: 30px;
+        left: 30px;
+    }
+    .text-content h1{
+        font-size: 2rem;
+    }
+    .text-content h2{
+        font-size: 1rem;
+    }
+    .img-content::before{
+        left: 180px;
+        top: 5px;
+        height: 16rem;
+    }
+    .img-content .add{
+       display: none;
+    }
+    .img-content small{
+      display: none;
+    }
+   .container-flued{
+        overflow: hidden;
+    }
+    .icons {
+        margin-top: 120px;
+    }
+}
+
+/* Media Quary for 576 */
+@media (max-width:575px) {
+    .Logo {
+        width: 60px;
+    }
+    .navbar i{
+        font-size: 35px;
+    }
+    .img-content .controller{
+        max-width: 27rem;
+    }
+    .img-content::before{
+        height: 19rem;
+        left: 250px;
+    }
+    .img-content .add{
+        display: block;
+        left : 510px;
+        top: -150px;
+        width: 48px;
+       
+     }
+     .img-content small{
+       display: block;
+       top: -140px;
+       left: 230px;
+       font-size: 18px;
+      text-align: center;
+     }
+     .text-content{
+        margin-top: 30px;
+        padding-left: 50px;
+     }
+     .text-content::before{
+        width: 10px;
+        left: 10px;
+     }
+     .text-content h1 {
+        font-size: 3.5rem;
+    }
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+    .text-content p{
+        font-size: 1.5rem;
+    }
+    .text-content h3{
+        font-size: 2rem;
+    }
+    .text-content .btn{
+        padding: 10px;
+    }
+    .icons {
+        margin-top: 60px;
+    }
+    
+    
+}
+
