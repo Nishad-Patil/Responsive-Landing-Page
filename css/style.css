@@ -178,6 +178,31 @@ position: relative;
     .navbar i{
         font-size: 35px;
     }
+    .navigation a{
+        display: block;
+        text-align: end;
+        padding-right: 10px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .navigation{
+        position: relative;
+        left: 420px;
+        top: -88px;
+        height: 200px;
+        width: 80%;
+        padding-right:30px;
+        background: linear-gradient(to bottom,#f53162ec,#f81f1f); 
+        border-radius: 10px;
+        display: none;
+        transition: top 1s ease;
+    }
+    .navigation:hover{
+        left: 30px;
+        top: 120px;
+        display: block;
+    }
+    
     .img-content .controller{
         max-width: 27rem;
     }
@@ -194,10 +219,10 @@ position: relative;
      }
      .img-content small{
        display: block;
-       top: -140px;
-       left: 230px;
+       top: -130px;
+       left: 490px;
        font-size: 18px;
-      text-align: center;
+     
      }
      .text-content{
         margin-top: 30px;
@@ -224,6 +249,9 @@ position: relative;
     }
     .icons {
         margin-top: 60px;
+    }
+    .icons i{
+        font-size: 30px;
     }
     
     
